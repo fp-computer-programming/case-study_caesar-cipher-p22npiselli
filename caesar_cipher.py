@@ -1,28 +1,32 @@
+# Nolan Piselli
 
-
-# Imports
+#imports
 from string import ascii_uppercase
 
 
-# Functions
+#functions
 def cipher_key(shift):
-    original_letters = ascii_uppercase
+     original_letters = ascii_uppercase
     shifted_letters = ascii_uppercase[int(shift):] + ascii_uppercase[:int(shift)]
-
+    
     return dict(zip(original_letters, shifted_letters))
-
+    
 
 def shift_line(line, dict_key):
     new_line = ""
-    # Add code here
+    for letter in line:
+        letter == dict[dict_key]
+    new_line.append(letter)
     return new_line
+    
 
 
 def encrypt_message(filename, dict_key):
-    # Add code here
+    file = open("encrypted_{0}".format(filename), "w")
+    file.write
 
 
-# Main
+#main
 user_file = input("Please enter a file to be encrypted: ")
 shift_value = input("Please enter a shift value: ")
 
